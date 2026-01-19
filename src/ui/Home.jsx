@@ -14,6 +14,7 @@ function Home() {
           Straight out of the oven, straight to you.
         </span>
       </h1>
+      <h2 className="text-yellow-500 font-semibold">Testing tailwindcss </h2>
 
       {/* {username === '' ? (
         <CreateUser />
