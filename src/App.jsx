@@ -24,6 +24,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />,
       },
+      // {
+      //   path: '/react-pizza-order',
+      //   element: <Home />,
+      // },
       {
         path: '/menu',
         element: <Menu />,
@@ -45,7 +49,10 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+], {
+  // All routes will be prefixed with /app for deployment url
+  basename: "/react-pizza-order"
+});
 
 function App() {
   return <RouterProvider router={router} />;
